@@ -1,6 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <h1> All Locations </h1>
+    <div class="destinations">
+    <div v-for="destination in destinations"
+      :key=destination.name>
+        <router-link :to="destination.name">
+          <h2> {{ destination.name }} </h2>
+        </router-link>
+        <router-link :to="destination.name">
+          <figure>
+            <img :src="require(`@/assets/${destination.image}`)" />
+          </figure>
+        </router-link>
+    </div>
+    </div>
   </div>
 </template>
 
@@ -20,3 +33,17 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.home {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+img {
+  max-width: 200px;
+}
+.destinations {
+  display: flex;
+  justify-content: space-between;
+}
+</style>
