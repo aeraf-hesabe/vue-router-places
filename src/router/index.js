@@ -16,14 +16,18 @@ const routes = [
     name: "DestinationDetails",
     props: true,
     component: () =>
-    import(/* webpackChunkName: "details" */ "../views/DestinationDetails.vue"),
+      import(
+        /* webpackChunkName: "details" */ "../views/DestinationDetails.vue"
+      ),
     children: [
       {
         path: ":experienceSlug",
         name: "experienceDetails",
         props: true,
         component: () =>
-        import(/* webpackChunkName: "experienceDetails" */ "../views/ExperienceDetails.vue")
+          import(
+            /* webpackChunkName: "experienceDetails" */ "../views/ExperienceDetails.vue"
+          )
       }
     ]
   }

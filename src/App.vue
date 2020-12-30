@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import TheNavigation from "@/components/TheNavigation"
+import TheNavigation from "@/components/TheNavigation";
 
 export default {
   components: {
     TheNavigation
   }
-}
+};
 </script>
 <style>
 #app {
@@ -22,5 +22,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
 </style>

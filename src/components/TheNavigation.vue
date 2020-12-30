@@ -12,7 +12,7 @@
         <router-link
           :to="{
             name: 'DestinationDetails',
-            params: {slug:destination.slug}
+            params: { slug: destination.slug }
           }"
         >
           {{ destination.name }}
