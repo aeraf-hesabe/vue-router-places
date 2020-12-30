@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
+
 const routes = [
   {
     path: "/",
@@ -11,7 +12,7 @@ const routes = [
     component: Home
   },
   {
-    path: "/details/:id",
+    path: "/details/:slug",
     name: "DestinationDetails",
     component: () =>
     import(/* webpackChunkName: "details" */ "../views/DestinationDetails.vue")
