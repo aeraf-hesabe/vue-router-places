@@ -1,13 +1,18 @@
 <template>
   <div class="home">
-    <h1> All Locations </h1>
+    <h1>All Locations</h1>
     <div class="destinations">
-    <div v-for="destination in destinations"
-      :key=destination.name>
-        <router-link :to="{ name: 'DestinationDetails', params: {slug:destination.slug} }">
-          <h2> {{ destination.name }} </h2>
+    <div v-for="destination in destinations" :key=destination.name>
+        <router-link :to="{ 
+            name: 'DestinationDetails',
+            params: {slug:destination.slug} 
+          }">
+          <h2>{{ destination.name }}</h2>
         </router-link>
-        <router-link :to="{ name: 'DestinationDetails', params: {slug:destination.slug} }">
+        <router-link :to="{ 
+            name: 'DestinationDetails', 
+            params: {slug:destination.slug} 
+          }">
           <figure>
             <img :src="require(`@/assets/${destination.image}`)" />
           </figure>
