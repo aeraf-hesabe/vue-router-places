@@ -1,5 +1,6 @@
 <template>
   <div>
+    <GoBack></GoBack>
     <section class="destination">
       <h2>{{ destination.name }} Details</h2>
       <figure>
@@ -38,7 +39,12 @@
 
 <script>
 import store from "@/store.js";
+import GoBack from "@/components/GoBack.vue";
+
 export default {
+  components: {
+    GoBack
+  },
   data() {
     return {};
   },
