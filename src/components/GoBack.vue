@@ -1,18 +1,17 @@
 <template>
-    <div class="go-back">
-        <button @click="goBack">Go Back</button>
-    </div>
+  <div class="go-back">
+    <button @click="goBack">Go Back</button>
+  </div>
 </template>
 
 <script>
 export default {
   methods: {
-      goBack() {
-        this.$router.go(-1);
-      }
+    goBack() {
+      this.$router.go(-1);
+    }
   }
-}
-
+};
 </script>
 
 <style scoped>
